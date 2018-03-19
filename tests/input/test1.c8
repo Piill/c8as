@@ -1,0 +1,40 @@
+; All instructions
+label
+	CLS ; Another comment
+	RET
+	SYS label
+	JP label
+	CALL label
+	SE V1, 0x10
+	SNE V1, 0x10
+	SE V1, VA
+	LD V1, 0x10
+	ADD V1, 0x10
+
+
+label2
+	LD V1, VA
+	OR V1, VA
+	AND V1, VA
+	XOR V1, VA
+	ADD V1, VA
+	SUB V1, VA
+	SHR V1  VA
+	SUBN V1, VA
+	SHL V1  VA
+	SNE V1, VA
+	LD I, label
+	JP V0, label
+	RND V1, 0x10
+	DRW V1, VA, 8
+	SKP V1
+	SKNP V1
+	LD V1, DT
+	LD V1, K
+	LD DT, V1
+	LD ST, V1
+	ADD I, V1
+	LD F, V1
+	LD B, V1
+	LD I, V1
+	LD V1, I
