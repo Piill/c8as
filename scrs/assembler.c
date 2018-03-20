@@ -180,12 +180,12 @@ line parse_line(const char* scr) {
 	}
 	strcpy(ret.original_line, char_line);
 
-	char* c_tok = strtok(char_line, " ,");
+	char* c_tok = strtok(char_line, " ,\t");
 
 	int i;
 	for(i = 0; c_tok != NULL; i++) {
 		strncpy(ret.tokens[i], c_tok, NAME_MAX);
-		c_tok = strtok(NULL, " ,");
+		c_tok = strtok(NULL, " ,\t");
 	}
 	ret.num = i;
 
